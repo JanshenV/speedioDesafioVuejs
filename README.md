@@ -9,12 +9,13 @@
 - Quinto passo: criar um arquivo ".env" e utilizar preencher os dados como no ".env.EXAMPLE" No .example estão contidos as informações da port, info do banco de dados, secret jwt para lidar com tokens e o bilty token que é o token do serviço qual utilizei para encurtar urls(https://bitly.com/).
   -Sexto passo: utilizar o comando "npm run dev" para iniciar o projeto.
 
-Para rodar o front-end:
-Primeiro passo: Ter o repositório clonado na máquina.
-Segundo passo: abra o command prompt, windows terminal, git bash ou terminal do vscode na pasta root "back-end" do repositório clonado.
-Terceiro passo: utilizar o comando "npm install" para que as dependências do projeto sejam instaldas.
-Quarto passo: instaladas as dependÊncias, roode o comando "npm run serve". Ao finalizar o serve essa mensagem irá aparecer: App running at:
+## Para rodar o front-end:
 
-- Local: http://localhost:8080/
-- Network: http://192.168.1.8:8080/
-  Segure ctrl e click no primeiro http://localhost:8080/. Isso abrirar o projeto no browser.
+- Primeiro passo: Ter o repositório clonado na máquina.
+  -Segundo passo: abra o command prompt, windows terminal, git bash ou terminal do vscode na pasta root "back-end" do repositório clonado.
+  -Terceiro passo: utilizar o comando "npm install" para que as dependências do projeto sejam instaldas.
+  -Quarto passo: instaladas as dependÊncias, roode o comando "npm run serve". Ao finalizar o serve essa mensagem irá aparecer: App running at:
+
+-- Local: http://localhost:8080/
+-- Network: http://192.168.1.8:8080/
+Segure ctrl e click no primeiro http://localhost:8080/. Isso abrirar o projeto no browser.
