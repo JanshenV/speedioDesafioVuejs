@@ -1,0 +1,36 @@
+.headerhome-container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.profile span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile .profilepic-icon {
+    height: 40px;
+}
+
+.profile .logout-icon {
+    height: 30px;
+    cursor: pointer;
+    padding: 0 auto;
+}
+
+.profile .logout-icon:hover {
+    height: 40px;
+}

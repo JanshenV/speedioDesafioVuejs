@@ -1,0 +1,86 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-form {
+    width: 620px;
+    margin: 30px auto;
+    background-color: white;
+    text-align: left;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.login-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 620px;
+    height: 100px;
+    border-radius: 20px;
+    color: white;
+    font-weight: normal;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 12px;
+}
+
+.login-link a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: crimson;
+    color: white;
+}
+
+label {
+    color: #aaa;
+    display: inline-block;
+    margin: 25px 0 15px;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    padding: 10px 6px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+button {
+    margin-top: 30px;
+    margin-left: 40%;
+    align-self: center;
+    padding: 12px;
+    border-radius: 8px;
+    width: 25%;
+    background: #0b6dff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background: white;
+    color: #0b6dff;
+}
