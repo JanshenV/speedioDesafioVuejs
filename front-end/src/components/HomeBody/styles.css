@@ -11,12 +11,17 @@
 }
 
 .createUrl {
-    background-color: rgb(0, 255, 128);
+    background-color: rgb(64, 133, 98);
     color: white;
     padding: 20px;
     margin: 40px 0 20px 0;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.createUrl:hover {
+    background-color: white;
+    color: rgb(64, 133, 98);
 }
 
 .tableContainer {
@@ -46,6 +51,10 @@
 
 .deleteIcon {
     cursor: pointer;
+}
+
+.tableLine:hover {
+    background-color: white;
 }
 
 .deleteIconDisplayNone {

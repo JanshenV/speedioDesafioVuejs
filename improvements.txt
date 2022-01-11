@@ -1,0 +1,23 @@
+Coisas que eu melhoraria no código front-end se tivesse mais tempo:
+
+Primeiro e mais importante: Organização do código e nomes das variáveis. Como estava no processo de aprender Vue enquanto realizava o projeto, algumas funções e variáveis não foram escritas semânticamente, tornando a leitura do código confusa. Então a refatoração,semântica e organização do código seria a primeira coisa melhorar caso tivesse mais tempo.  
+
+Segundo: Melhoraria o design de cores e as mensagens de erro deixariam de aparecer pelo alert. Não são todas, mas essas que são eu faria mensagens mais elaboradas para indicar o erro.
+
+Terceiro: Organização por parte das chamadas da api. Eu tiraria por completo dos códigos vue todo o código que chama a api seja ela para DELETE, POST ou GET e rafatoraria em uma pasta que serviria só para chamadas da api.
+
+Quarto: Procuraria aprender sobre global provider para que eu possa retirar as props das chamadas dos componentes. Isso tornaria o código muito mais limpo e seria mais fácil manipular os dados de qualquer componente que eu desejasse.
+
+
+
+Coisas que eu melhoraria no código back-end se tivesse mais tempo:
+
+Primeiro: Refatoração de algumas partes do código e semântica. Creio que o back-end não está perfeito, mas ele está funcional e de fácil leitura até onde eu consegui ver.
+
+Segundo: Usaria o nodemailer para que o usuário que se cadastrasse recebesse um email confirmando cadastro no aplicativo.
+
+
+
+
+
+
