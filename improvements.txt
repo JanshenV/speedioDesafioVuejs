@@ -1,6 +1,6 @@
 Coisas que eu melhoraria no código front-end se tivesse mais tempo:
 
-Primeiro e mais importante: Organização do código e nomes das variáveis. Como estava no processo de aprender Vue enquanto realizava o projeto, algumas funções e variáveis não foram escritas semânticamente, tornando a leitura do código confusa. Então a refatoração,semântica e organização do código seria a primeira coisa melhorar caso tivesse mais tempo.  
+Primeiro e mais importante: Organização do código e nomes das variáveis. Como estava no processo de aprender Vue enquanto realizava o projeto, algumas funções e variáveis não foram escritas semânticamente, tornando a leitura do código confusa. Então a refatoração,semântica e organização do código seria a primeira coisa melhorar caso tivesse mais tempo. E usaria typescript pra codar
 
 Segundo: Melhoraria o design de cores e as mensagens de erro deixariam de aparecer pelo alert. Não são todas, mas essas que são eu faria mensagens mais elaboradas para indicar o erro.
 
