@@ -16,6 +16,6 @@
 - Terceiro passo: utilizar o comando "npm install" para que as dependências do projeto sejam instaldas.
 - Quarto passo: instaladas as dependÊncias, roode o comando "npm run serve". Ao finalizar o serve essa mensagem irá aparecer: App running at:
 
-- Local: http://localhost:8080/
-- Network: http://192.168.1.8:8080/
-  Segure ctrl e click no primeiro http://localhost:8080/. Isso abrirar o projeto no browser.
+  - Local: http://localhost:8080/
+  - Network: http://192.168.1.8:8080/
+  - Segure ctrl e click no primeiro http://localhost:8080/. Isso abrirá o projeto no browser.
