@@ -18,4 +18,4 @@
 
 - Local: http://localhost:8080/
 - Network: http://192.168.1.8:8080/
-  Segure ctrl e click no primeiro http://localhost:8080/. Isso abrirar o projeto no browser.
+  Segure ctrl e click no primeiro http://localhost:8080/. Isso abrirá o projeto no browser.
