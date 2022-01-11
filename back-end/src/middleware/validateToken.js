@@ -26,7 +26,7 @@ async function ValidateToken(req, res, next) {
         };
 
         const { password: _, ...userData } = user;
-        req.user = userData;
+        req.user = { userData, biltyToken: process.env.BILTY_TOKEN };
         return next();
 
     } catch ({ message }) {

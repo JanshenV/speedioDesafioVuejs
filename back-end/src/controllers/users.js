@@ -16,13 +16,13 @@ async function UserSignUp(req, res) {
 
     try {
         await yupUserSignUp.validate(req.body);
-
+        const emailLowerCase = email.toLowerCase();
         const existingEmail = await knex('users')
-            .where({ email })
+            .where({ email: emailLowerCase })
             .first();
 
 
-        if (existingEmail) return res.status.json({
+        if (existingEmail) return res.status(400).json({
             message: 'Email já cadastrado.'
         });
 
@@ -35,10 +35,9 @@ async function UserSignUp(req, res) {
         });
 
         const encryptedPassword = await bcrypt.hash(String(password), 10);
-
         const userData = {
             username,
-            email,
+            email: emailLowerCase,
             password: encryptedPassword
         };
 
@@ -64,9 +63,9 @@ async function UserLogin(req, res) {
 
     try {
         await yupUserLogin.validate(req.body);
-
+        const emailLowerCase = email.toLowerCase();
         const user = await knex('users')
-            .where({ email })
+            .where({ email: emailLowerCase })
             .first();
 
         if (!user) {
@@ -101,8 +100,15 @@ async function UserLogin(req, res) {
     };
 };
 
+async function UserProfile(req, res) {
+    const user = req.user;
+    res.status(200).json(user);
+};
+
+
 
 module.exports = {
     UserSignUp,
-    UserLogin
+    UserLogin,
+    UserProfile
 };

@@ -8,7 +8,7 @@ async function CreateUrl(req, res) {
         visits
     } = req.body;
 
-    const user = req.user;
+    const { userData } = req.user;
 
     try {
         await yupUrl.validate(req.body);
@@ -24,7 +24,7 @@ async function CreateUrl(req, res) {
         };
 
         const urlData = {
-            user_id: user.id,
+            user_id: userData.id,
             url_address,
             title,
             visits
@@ -47,34 +47,33 @@ async function CreateUrl(req, res) {
 
 async function DeleteUrl(req, res) {
     const { id } = req.params;
-    const user = req.user;
+    const { userData } = req.user;
 
     if (!id) {
         return res.status.json({
             message: 'Paramêtro de url é obrigatório.'
         });
     };
-
     try {
         const url = await knex('url')
             .where({
                 id,
-                user_id: user.id
+                user_id: userData.id
             })
-            .first();
+            .first()
 
         if (!url) {
             return res.status(404).json({
                 message: 'Url não encontrada ou não pertence ao usuário.'
+
             });
         };
-
 
         await knex('url')
             .del()
             .where({
                 id,
-                user_id: user.id
+                user_id: userData.id
             });
 
         return res.status(200).json({
@@ -89,7 +88,55 @@ async function DeleteUrl(req, res) {
     };
 };
 
+async function AllUrl(req, res) {
+    try {
+        const allurl = await knex('url');
+        res.status(200).json(allurl);
+    } catch ({ message }) {
+        return res.status(400).json({
+            message
+        });
+    };
+};
+
+async function EditUrl(req, res) {
+    const {
+        visits
+    } = req.body;
+    const { id } = req.params;
+    const { visit } = req.query;
+
+    try {
+
+        const url = await knex('url')
+            .where({ id })
+            .first();
+
+        if (!url) {
+            return res.status(404).json({
+                message: 'Url não encontrada.'
+            });
+        };
+
+        await knex('url')
+            .where({ id })
+            .update({
+                visits: visit
+            })
+
+        return res.status(200).json();
+
+
+    } catch ({ message }) {
+        return res.status(400).json({
+            message
+        });
+    };
+};
+
 module.exports = {
     CreateUrl,
-    DeleteUrl
+    DeleteUrl,
+    AllUrl,
+    EditUrl
 };
