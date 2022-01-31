@@ -12,7 +12,7 @@
 ## Para rodar o front-end:
 
 - Primeiro passo: Ter o repositório clonado na máquina.
-- Segundo passo: abra o command prompt, windows terminal, git bash ou terminal do vscode na pasta root "back-end" do repositório clonado.
+- Segundo passo: abra o command prompt, windows terminal, git bash ou terminal do vscode na pasta root "front-end" do repositório clonado.
 - Terceiro passo: utilizar o comando "npm install" para que as dependências do projeto sejam instaldas.
 - Quarto passo: instaladas as dependÊncias, roode o comando "npm run serve". Ao finalizar o serve essa mensagem irá aparecer: App running at:
 
